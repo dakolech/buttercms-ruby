@@ -172,9 +172,9 @@ module ButterCMS
   
   def self.http_options
     {
-      open_timeout: 2.0,
+      open_timeout: 4.0,
       read_timeout: read_timeout || 5.0,
-      ssl_timeout:  2.0,
+      ssl_timeout:  4.0,
       use_ssl:      @api_url.scheme == "https",
     }
   end
